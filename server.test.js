@@ -38,7 +38,7 @@ function request(pathname) {
 
 test('GET /health returns 200 and status ok', async () => {
   const response = await request('/health');
-  expect(response.statusCode).toBe(200);
+  expect(response.statusCode).toBe(999);
   expect(response.body).toEqual({ status: 'ok' });
 });
 
