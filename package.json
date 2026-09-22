@@ -5,7 +5,12 @@
   "description": "Small Node.js backend for atelier_jenkins_chap2",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest",
+    "build": "mkdir -p target && cp server.js target/"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2"
   },
   "engines": {
     "node": ">=18"
